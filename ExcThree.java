@@ -5,6 +5,8 @@ public class ExcThree {
             System.out.println(array[34]);
         } catch (IndexOutOfBoundsException n) {
             System.out.println("Index  34 value is not in array");
+        }finally{
+            System.out.println("this is finally");
         }
     }
 }
