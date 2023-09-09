@@ -2,11 +2,11 @@ import java.util.*;
 
 class check{
 
-     public void PasswordCheck(int password, int pin) throws ArithmeticException {
+     public void PasswordCheck(int password, int pin) throws RuntimeException {
           if (password == pin) {
                System.out.println("Login successfully");
           }  else{
-               throw new ArithmeticException("Wrong password");
+               throw new RuntimeException("Wrong password");
           }
      }
 
@@ -25,9 +25,9 @@ public class PasswordCheckException {
           try {
                obj.PasswordCheck(123, pin);
                
-          } catch (ArithmeticException e) {
+          } catch (RuntimeException e) {
 
-              throw new ArithmeticException("Wrong password");
+              throw new RuntimeException("Wrong password");
           }
           
      }
